@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckedTextView
+        android:text="Answer3"
+        android:layout_width="280dp"
+        android:layout_height="34dp"
+        android:id="@+id/ThirdAnswerCheckedTextView"
+        android:checked="false"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:layout_marginBottom="43dp"
+        android:layout_above="@+id/NextQuestionButton"
+        android:layout_alignLeft="@+id/SecondCheckedTextView"
+        android:layout_alignStart="@+id/SecondCheckedTextView"
+        android:fontFamily="serif" />
+
+    <CheckedTextView
+        android:text="Answer1"
+        android:layout_width="280dp"
+        android:layout_height="34dp"
+        android:id="@+id/FirstAnswerCheckedTextView"
+        android:checked="false"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/SecondCheckedTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="serif" />
+
+    <CheckedTextView
+        android:text="Answer2"
+        android:layout_width="280dp"
+        android:layout_height="34dp"
+        android:id="@+id/SecondCheckedTextView"
+        android:checked="false"
+        android:checkMark="?android:attr/listChoiceIndicatorSingle"
+        android:layout_marginBottom="46dp"
+        android:layout_alignBottom="@+id/ThirdAnswerCheckedTextView"
+        android:layout_alignLeft="@+id/FirstAnswerCheckedTextView"
+        android:layout_alignStart="@+id/FirstAnswerCheckedTextView"
+        android:fontFamily="serif" />
+
+    <Button
+        android:text="Return to main menu"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ReturnToMainMenuQuizzButton"
+        android:layout_below="@+id/ThirdAnswerCheckedTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Next Question"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:id="@+id/NextQuestionButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="EXIT"
+        android:layout_width="67dp"
+        android:layout_height="45dp"
+        android:id="@+id/exitQuizButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Question text view "
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:id="@+id/QuestiontextView"
+        android:layout_marginBottom="19dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:fontFamily="serif"
+        android:typeface="serif"
+        android:textSize="18sp"
+        android:layout_above="@+id/FirstAnswerCheckedTextView"
+        android:layout_alignLeft="@+id/FirstAnswerCheckedTextView"
+        android:layout_alignStart="@+id/FirstAnswerCheckedTextView"
+        android:layout_alignRight="@+id/NextQuestionButton"
+        android:layout_alignEnd="@+id/NextQuestionButton" />
+
+    <TextView
+        android:text=""
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/QuestiontextView"
+        android:layout_alignStart="@+id/QuestiontextView"
+        android:id="@+id/QuestionNumberTextView"
+        android:layout_below="@+id/exitQuizButton"
+        android:textStyle="normal|bold|italic" />
+
+</RelativeLayout>
